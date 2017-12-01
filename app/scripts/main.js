@@ -16,7 +16,7 @@
     */
 
     class RetractableElement {
-        constructor(element, className, retractOnDown = true, threshold = 5) {
+        constructor(element, className, retractOnDown = true, threshold = 0) {
             this.element = element;
             this.className = className;
             this.retractOnDown = retractOnDown;
