@@ -1,7 +1,7 @@
 {
   "private": true,
   "engines": {
-    "node": ">=0.12.0"
+    "node": ">=8.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.4.0",
@@ -9,7 +9,7 @@
     "babel-preset-react": "^6.24.1",
     "browser-sync": "^2.2.1",
     "del": "^1.1.1",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.0.1",
     "gulp-babel": "^6.1.2",
     "gulp-cache": "^0.2.8",
@@ -28,17 +28,12 @@
     "main-bower-files": "^2.5.0",
     "wiredep": "^2.2.2"
   },
-  "eslintConfig": {
-    "env": {
-      "es6": true,
-      "node": true,
-      "browser": true
-    },
-    "rules": {
-      "quotes": [
-        2,
-        "single"
-      ]
-    }
+  "scripts": {
+    "run": "./node_modules/.bin/gulp serve"
+  },
+  "dependencies": {
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
   }
 }

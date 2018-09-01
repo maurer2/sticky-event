@@ -1,13 +1,13 @@
-const intersection = new IntersectionObserver(observedElements => {
-    observedElements.forEach((element) => {
-        const name = element.target.className;
+const intersection = new IntersectionObserver((observedElements) => {
+  observedElements.forEach((element) => {
+    const name = element.target.className;
 
-        if (element.isIntersecting) {
-            console.log(`${name}: visible`);
-        } else {
-            console.log(`${name}: hidden`);
-        }
-    });
+    if (element.isIntersecting) {
+      console.log(`${name}: visible`);
+    } else {
+      console.log(`${name}: hidden`);
+    }
+  });
 });
 
 intersection.observe(document.querySelector('.header-2'));
