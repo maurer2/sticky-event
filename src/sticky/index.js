@@ -1,5 +1,5 @@
-import { RetractableElement } from '@app/sticky/retractableElement';
-import './styles.scss';
+import RetractableElement from '~/sticky/retractableElement';
+import '~/sticky/styles.scss';
 
 // old school sticky
 /*

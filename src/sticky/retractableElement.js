@@ -1,4 +1,4 @@
-export class RetractableElement {
+export default class RetractableElement {
   constructor(element, className, retractOnDown = true, threshold = 0) {
     this.element = element;
     this.className = className;
