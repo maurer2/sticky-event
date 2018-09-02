@@ -1,20 +1,4 @@
-const header = document.querySelector('body > .header');
-const footer = document.querySelector('body > .footer');
-
-// old school sticky
-/*
-if (CSS.supports('position', 'sticky')) {
-    // onScroll-event
-    window.addEventListener('scroll', () => {
-        let offsetNav = nav.offsetTop || -1;
-        let scrollPosition = window.scrollY || window.pageYOffset;
-
-        header.classList.toggle('stuck', scrollPosition > offsetNav);
-    });
-}
-*/
-
-class RetractableElement {
+export default class RetractableElement {
   constructor(element, className, retractOnDown = true, threshold = 0) {
     this.element = element;
     this.className = className;
@@ -66,9 +50,3 @@ class RetractableElement {
     this.element.classList.remove(this.className);
   }
 }
-
-const stickyHeader = new RetractableElement(header, 'retracted');
-const stickyFooter = new RetractableElement(footer, 'retracted', false);
-
-stickyHeader.init();
-stickyFooter.init();
