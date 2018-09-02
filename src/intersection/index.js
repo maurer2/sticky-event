@@ -1,3 +1,5 @@
+import '~/intersection/styles.scss';
+
 const intersection = new IntersectionObserver((observedElements) => {
   observedElements.forEach((element) => {
     const name = element.target.className;

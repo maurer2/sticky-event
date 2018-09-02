@@ -25,8 +25,9 @@
     "webpack-dev-server": "^3.1.7"
   },
   "scripts": {
-    "compile": "webpack",
+    "compile": "webpack --progress",
     "run-sticky": "webpack-dev-server --content-base dist/sticky",
+    "run-intersection": "webpack-dev-server --content-base dist/intersection",
     "lint": "node node_modules/.bin/eslint ./src"
   }
 }
