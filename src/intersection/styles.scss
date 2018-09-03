@@ -14,30 +14,6 @@ body {
   color: #333;
 }
 
-.header {
-  $this: &;
-
-  grid-row-start: 1;
-  /* autoprefixer: off */
-  grid-row-end: 2;
-
-  height: 50px;
-  background: teal;
-  color: #ffffff;
-
-  @supports (position: sticky) {
-    position: sticky;
-    top: 0;
-    will-change: transform;
-    transform: translateY(0);
-    transition: transform .25s ease-out;
-
-    &.retracted {
-      transform: translateY(-100%);
-    }
-  }
-}
-
 .header-2 {
   $this: &;
 
@@ -77,29 +53,6 @@ body {
     grid-area: content;
 
     background: lightpink;
-  }
-}
-
-.footer {
-  display: grid;
-  grid-row-start: 4;
-  /* autoprefixer: off */
-  grid-row-end: 5;
-
-  background: lightgreen;
-  height: 50px;
-  border-top: 1px solid #c3c3c3;
-
-  @supports (position: sticky) {
-    position: sticky;
-    bottom: -1px;
-    will-change: transform;
-    transform: translateY(0);
-    transition: transform .25s ease-out;
-
-    &.retracted {
-      transform: translateY(100%);
-    }
   }
 }
 

@@ -10,5 +10,8 @@ yarn
 
 ### Running
 ```
-yarn run-sticky
+yarn compile
+yarn run
+
+-> Open URL in console for instance http://localhost:9000/
 ```
